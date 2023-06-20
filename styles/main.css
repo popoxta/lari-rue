@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
 
 :root {
-    --popoxta-dark: #1b2536;
-    --popoxta-med-dark: #344f75;
-    --popoxta-med-half: #344F7C;
-    --popoxta-green: #B8FFC3;
+    --darkest: #1b2536;
+    --dark: #344f75;
+    --lighter: #344F7C;
+    --lightest: #4A7287;
+    --drawer: #32556F;
+    --green: #B8FFC3;
 
     font-family: 'Poppins', sans-serif;
 }
@@ -28,11 +30,9 @@ body {
     background: linear-gradient(180deg, #344f75, #334e73, #324b6f, #2f4769, #2d4261, #293c59, #263650, #233148, #202c41, #1d283b, #1c2637, #1b2536 45rem);
 }
 
-
 .white {
     color: white;
 }
-
 
 a {
     color: inherit;
@@ -40,7 +40,7 @@ a {
 }
 
 a:after {
-    color: var(--popoxta-green);
+    color: var(--green);
     content: "<";
     position: absolute;
     opacity: 0;
@@ -59,7 +59,7 @@ a:hover:after {
 
 
 .header-circle {
-    background-color: var(--popoxta-med-half);
+    background-color: var(--lighter);
     border-radius: 50px;
     position: fixed;
     top: 1.7rem;
@@ -69,7 +69,7 @@ a:hover:after {
 }
 
 .title {
-    color: var(--popoxta-green);
+    color: var(--green);
     cursor: pointer;
     font-size: 2rem;
     font-weight: normal;
@@ -114,7 +114,7 @@ a:hover:after {
 }
 
 .main-content > h2 {
-    color: var(--popoxta-green);
+    color: var(--green);
     font-size: 2rem;
     font-weight: normal;
     text-transform: uppercase;
@@ -127,14 +127,14 @@ a:hover:after {
 
 .main-content > hr {
     width: 80%;
-    background-color: var(--popoxta-med-dark);
+    background-color: var(--dark);
     border: none;
     height: 2px;
     margin: 1rem 0 1.5rem;
 }
 
 .main-content > h3 {
-    color: var(--popoxta-green);
+    color: var(--green);
     font-size: 1.2rem;
     font-weight: normal;
     text-transform: uppercase;
@@ -168,7 +168,7 @@ a:hover:after {
 
 .section-content hr {
     width: 90%;
-    background-color: var(--popoxta-green);
+    background-color: var(--green);
     border: none;
     height: 2px;
     margin: 0.5rem 0 1rem;
@@ -185,7 +185,7 @@ a:hover:after {
 }
 
 .links > li {
-    color: var(--popoxta-green);
+    color: var(--green);
     margin-bottom: 2rem;
 }
 
@@ -200,7 +200,7 @@ footer {
 }
 
 .footer {
-    color: var(--popoxta-med-dark);
+    color: var(--dark);
     opacity: 50%;
     font-size: 2rem;
     font-weight: bold;
@@ -260,7 +260,6 @@ footer {
     opacity: 20%;
 }
 
-f
 .hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
     transform: translateY(12px) rotate(45deg);
 }
@@ -288,7 +287,7 @@ f
     display: block;
     width: 90%;
     height: 3px;
-    background-color: white;
+    background-color: var(--green);
     transition: all 0.5s ease;
 }
 
@@ -301,24 +300,47 @@ f
     right: 0;
     top: 0;
     height: 100%;
-    width: 30%;
+    width: min(24rem, 50%);
     max-width: 100%;
-    padding: 2rem;
-    background: black;
+    padding: 8rem 4rem 2rem;
     transform: translateX(120%);
     transition: transform 0.5s ease;
     z-index: 1;
+    background: linear-gradient(180deg, var(--drawer), var(--darkest) 100%);
+}
+
+.drawer h4 {
+    color: var(--green);
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .drawer .nav-list {
-    padding: 0;
     list-style: none;
     margin-top: 3rem;
-    margin-left: 2rem;
 }
 
-.drawer .nav-list .nav-list-item {
-    padding-bottom: 1.5rem;
+.nav-list > li {
+    text-align: center;
+    color: white;
+}
+
+.nav-list a:after {
+    color: white;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+.nav-list > hr {
+    width: 90%;
+    background-color: var(--lightest);
+    border: none;
+    height: 2px;
+    margin: 1.5rem auto;
 }
 
 @media screen and (max-width: 750px) {
