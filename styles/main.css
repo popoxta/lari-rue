@@ -23,6 +23,7 @@ body {
     min-height: 100%;
     width: 100vw;
     margin: 0;
+    position: relative;
     /* More manual, painful gradient to try and combat banding */
     background: linear-gradient(180deg, #344f75, #334e73, #324b6f, #2f4769, #2d4261, #293c59, #263650, #233148, #202c41, #1d283b, #1c2637, #1b2536 45rem);
 }
@@ -109,7 +110,7 @@ a:hover:after {
     text-align: center;
     max-width: 40%;
     margin: 0 auto;
-    padding-top: 20vh;
+    padding-top: 25vh;
 }
 
 .main-content > h2 {
@@ -192,6 +193,22 @@ a:hover:after {
     margin-bottom: 0;
 }
 
+/* FOOTER */
+
+footer {
+    position: relative;
+}
+
+.footer {
+    color: var(--popoxta-med-dark);
+    opacity: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
 /* Cover to disable interactions when hb menu is open */
 .cover {
     position: fixed;
@@ -241,8 +258,9 @@ a:hover:after {
 
 .checkbox:checked ~ .cover {
     opacity: 20%;
-}f
+}
 
+f
 .hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
     transform: translateY(12px) rotate(45deg);
 }
@@ -316,7 +334,8 @@ a:hover:after {
     .section-content {
         flex-direction: column;
         max-width: 80%;
-        padding-bottom: 15vh;
+        padding-bottom: 25vh;
+        gap: 3rem;
     }
 
     .links {
