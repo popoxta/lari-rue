@@ -378,12 +378,11 @@ footer {
     color: var(--green);
 }
 
-.nav-list > hr {
-    width: 90%;
-    background-color: var(--lightest);
-    border: none;
-    height: 2px;
-    margin: 1.5rem auto;
+.nav-list > li:after {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid var(--lightest);
+    margin: 1.5rem;
 }
 
 @media screen and (max-width: 750px) {
