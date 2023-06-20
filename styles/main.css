@@ -94,9 +94,21 @@ a:hover:after {
 
 /* MAIN  */
 
+@keyframes float {
+    from {
+        transform: translateY(-8px);
+    }
+
+    to {
+        transform: translateY(8px);
+    }
+
+}
+
 .octopus {
     max-width: 15rem;
     margin-bottom: 2rem;
+    animation: float 1.8s ease-in-out alternate infinite;
 }
 
 .full-page {
@@ -148,7 +160,7 @@ a:hover:after {
     text-align: center;
     max-width: 60%;
     margin: 0 auto;
-    padding-top: 35vh;
+    padding-top: 30vh;
     gap: 8rem;
 }
 
