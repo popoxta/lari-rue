@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 150vh;
+    width: 100vw;
+    margin: 0;
+}
+
+/* HAMBURGER - https://unused-css.com/blog/css-only-hamburger-menu/ */
+
+.hamburger-container {
+    width: 30rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    transition: transform 0.5s ease;
+}
+
+.hamburger-container .checkbox {
+    opacity: 0;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+}
+
+.hamburger-container .drawer a {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hamburger-container .checkbox:checked ~ .drawer a {
+    opacity: 1;
+}
+
+.hamburger-container .checkbox:checked ~ .drawer {
+    transform: translateX(0%);
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(3) {
+    transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+.hamburger {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    right: 2rem;
+    display: block;
+    transition: transform 0.5s ease;
+    z-index: 1;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.hamburger .slice {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.hamburger .slice:not(:first-child) {
+    margin-top: 10px;
+}
+
+.drawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    max-width: 100%;
+    padding: 2rem;
+    background: black;
+    transform: translateX(120%);
+    transition: transform 0.5s ease;
+}
+
+.drawer .nav-list {
+    padding: 0;
+    list-style: none;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.drawer .nav-list .nav-list-item {
+    padding-bottom: 1.5rem;
+}
+
+/* Make the drawer full-width on mobile */
+@media screen and (max-width: 768px) {
+    .drawer {
+        width: 100%;
+    }
+}
