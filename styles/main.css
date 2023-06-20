@@ -15,12 +15,43 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    min-height: 200vh;
+    min-height: 100%;
     width: 100vw;
     margin: 0;
     /* More manual, painful gradient to try and combat banding */
     background: linear-gradient(180deg, #344f75, #334e73, #324b6f, #2f4769, #2d4261, #293c59, #263650, #233148, #202c41, #1d283b, #1c2637, #1b2536 45rem);
+}
+
+
+.white {
+    color: white;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:after {
+    color: var(--popoxta-green);
+    content: "<";
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in-out 0.2s;
+}
+
+a:hover {
+    color: white;
+}
+
+a:hover:after {
+    opacity: 1;
 }
 
 /* HEADER */
@@ -48,10 +79,6 @@ body {
     z-index: 3;
 }
 
-.white {
-    color: white;
-}
-
 .title-span {
     display: inline-block;
     opacity: 0;
@@ -71,8 +98,8 @@ body {
     margin-bottom: 2rem;
 }
 
-main {
-    height: 100vh;
+.full-page {
+    min-height: 100vh;
 }
 
 .main-content {
@@ -110,6 +137,59 @@ main {
     font-size: 1.2rem;
     font-weight: normal;
     text-transform: uppercase;
+}
+
+/* SECTIONS */
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 35vh;
+    gap: 8rem;
+}
+
+.section-text {
+    max-width: 35rem;
+}
+
+.section-content p, .section-content h3 {
+    color: white;
+    text-align: left;
+}
+
+.section-content h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.section-content hr {
+    width: 90%;
+    background-color: var(--popoxta-green);
+    border: none;
+    height: 2px;
+    margin: 0.5rem 0 1rem;
+}
+
+.section-links {
+    max-width: 100%;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.links {
+    list-style: none;
+}
+
+.links > li {
+    color: var(--popoxta-green);
+    margin-bottom: 2rem;
+}
+
+.links > li:last-of-type {
+    margin-bottom: 0;
 }
 
 /* Cover to disable interactions when hb menu is open */
@@ -161,7 +241,7 @@ main {
 
 .checkbox:checked ~ .cover {
     opacity: 20%;
-}
+}f
 
 .hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
     transform: translateY(12px) rotate(45deg);
@@ -223,8 +303,30 @@ main {
     padding-bottom: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .drawer {
-        width: 100%;
+        min-width: 100%;
+    }
+
+    .main-content {
+        max-width: 80%;
+        padding-top: 15vh;
+    }
+
+    .section-content {
+        flex-direction: column;
+        max-width: 80%;
+        padding-bottom: 15vh;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .links > li {
+        margin-bottom: 0;
     }
 }
