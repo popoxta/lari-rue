@@ -22,7 +22,7 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
 
-/* HAMBURGER - https://unused-css.com/blog/css-only-hamburger-menu/ */
+/* HAMBURGER - used with thanks from https://unused-css.com/blog/css-only-hamburger-menu/ */
 
 .hamburger-container {
     width: 30rem;
