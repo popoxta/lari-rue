@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
 
 :root {
-    --popoxta-dark: #27314B;
-    --popoxta-med-dark: #35517E;
+    --popoxta-dark: #1b2536;
+    --popoxta-med-dark: #344f75;
     --popoxta-med-half: #344F7C;
     --popoxta-green: #B8FFC3;
 
@@ -20,20 +20,18 @@ body {
     width: 100vw;
     margin: 0;
     /* More manual, painful gradient to try and combat banding */
-    background-image: linear-gradient(to bottom, #365280, #334972 10rem, #2f4165 20rem, #2b3958 30rem, #27314b 50rem);
+    background: linear-gradient(180deg, #344f75, #334e73, #324b6f, #2f4769, #2d4261, #293c59, #263650, #233148, #202c41, #1d283b, #1c2637, #1b2536 45rem);
 }
+
 /* HEADER */
 
-header {
-    padding: 2rem;
-    position: relative;
-}
 
 .header-circle {
     background-color: var(--popoxta-med-half);
     border-radius: 50px;
     position: fixed;
     top: 1.7rem;
+    left: 2rem;
     width: 3.5rem;
     height: 3.5rem;
 }
@@ -44,6 +42,8 @@ header {
     font-size: 2rem;
     font-weight: normal;
     margin-left: 1.3rem;
+    top: 2rem;
+    left: 2rem;
     position: fixed;
     z-index: 3;
 }
@@ -59,16 +59,64 @@ header {
     transition: opacity 0.15s ease-out, transform 0.3s ease-out;
 }
 
-.title:hover > .title-span{
+.title:hover > .title-span {
     opacity: 1;
     transform: translateY(0);
 }
 
+/* MAIN  */
+
+.octopus {
+    max-width: 15rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 40%;
+    margin: 0 auto;
+    padding-top: 20vh;
+}
+
+.main-content > h2 {
+    color: var(--popoxta-green);
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.main-content > p {
+    color: white;
+    font-weight: 300;
+}
+
+.main-content > hr {
+    width: 80%;
+    background-color: var(--popoxta-med-dark);
+    border: none;
+    height: 2px;
+    margin: 1rem 0 1.5rem;
+}
+
+.main-content > h3 {
+    color: var(--popoxta-green);
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
 /* Cover to disable interactions when hb menu is open */
 .cover {
-    position:fixed;
-    top:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     transform: translateX(120%);
