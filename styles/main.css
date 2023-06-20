@@ -9,6 +9,19 @@ body {
     margin: 0;
 }
 
+/* Cover to disable interactions when hb menu is open */
+.cover {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(120%);
+    background: black;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 /* HAMBURGER - https://unused-css.com/blog/css-only-hamburger-menu/ */
 
 .hamburger-container {
@@ -17,7 +30,7 @@ body {
     top: 2rem;
     right: 2rem;
     color: white;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease-in-out;
 }
 
 .hamburger-container .checkbox {
@@ -36,8 +49,12 @@ body {
     opacity: 1;
 }
 
-.hamburger-container .checkbox:checked ~ .drawer {
+.hamburger-container .checkbox:checked ~ .drawer, .checkbox:checked ~ .cover {
     transform: translateX(0%);
+}
+
+.checkbox:checked ~ .cover {
+    opacity: 20%;
 }
 
 .hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
@@ -59,7 +76,7 @@ body {
     right: 2rem;
     display: block;
     transition: transform 0.5s ease;
-    z-index: 1;
+    z-index: 3;
     cursor: pointer;
     padding-top: 5px;
 }
@@ -87,6 +104,7 @@ body {
     background: black;
     transform: translateX(120%);
     transition: transform 0.5s ease;
+    z-index: 1;
 }
 
 .drawer .nav-list {
@@ -100,7 +118,6 @@ body {
     padding-bottom: 1.5rem;
 }
 
-/* Make the drawer full-width on mobile */
 @media screen and (max-width: 768px) {
     .drawer {
         width: 100%;
