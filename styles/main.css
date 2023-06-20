@@ -35,7 +35,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: var(--green);
     text-decoration: none;
 }
 
@@ -113,7 +113,7 @@ a:hover:after {
     padding-top: 25vh;
 }
 
-.main-content > h2 {
+.main-content > h1 {
     color: var(--green);
     font-size: 2rem;
     font-weight: normal;
@@ -156,12 +156,16 @@ a:hover:after {
     max-width: 35rem;
 }
 
-.section-content p, .section-content h3 {
+.section-content p, .section-content h2 {
     color: white;
     text-align: left;
 }
 
-.section-content h3 {
+.section-content p {
+    font-weight: 300;
+}
+
+.section-content h2 {
     font-size: 2rem;
     font-weight: normal;
 }
@@ -191,6 +195,42 @@ a:hover:after {
 
 .links > li:last-of-type {
     margin-bottom: 0;
+}
+
+/* BLOG */
+
+.blog-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 20vh;
+}
+
+.blog-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.blog-content hr {
+    width: 60%;
+    background-color: var(--green);
+    border: none;
+    height: 2px;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.blog-text {
+    columns: 2;
+    column-gap: 5rem;
+}
+
+.blog-text > p {
+    color: white;
+    font-weight: 300;
+}
+
+.blog-content > .home-link {
+    margin-top: 3rem;
 }
 
 /* FOOTER */
@@ -309,7 +349,7 @@ footer {
     background: linear-gradient(180deg, var(--drawer), var(--darkest) 100%);
 }
 
-.drawer h4 {
+.drawer h3 {
     color: var(--green);
     font-size: 2rem;
     font-weight: normal;
@@ -324,6 +364,9 @@ footer {
 
 .nav-list > li {
     text-align: center;
+}
+
+.nav-list a {
     color: white;
 }
 
@@ -331,7 +374,7 @@ footer {
     color: white;
 }
 
-a:hover {
+.nav-list a:hover {
     color: var(--green);
 }
 
@@ -356,8 +399,11 @@ a:hover {
     .section-content {
         flex-direction: column;
         max-width: 80%;
-        padding-bottom: 25vh;
         gap: 3rem;
+    }
+
+    .full-page {
+        margin-bottom: 25vh;
     }
 
     .links {
@@ -369,5 +415,13 @@ a:hover {
 
     .links > li {
         margin-bottom: 0;
+    }
+
+    .blog-text {
+        columns: 1;
+    }
+
+    .blog-text > p {
+        margin-bottom: 3rem;
     }
 }
