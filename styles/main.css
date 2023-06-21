@@ -78,7 +78,7 @@ a:hover:after {
     top: 2rem;
     left: 2rem;
     position: fixed;
-    z-index: 3;
+    z-index: 1;
 }
 
 .title-span {
@@ -273,6 +273,7 @@ footer {
     background: black;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    z-index: 3;
 }
 
 /* HAMBURGER - used with thanks from https://unused-css.com/blog/css-only-hamburger-menu/ */
@@ -332,7 +333,7 @@ footer {
     right: 2rem;
     display: block;
     transition: transform 0.5s ease;
-    z-index: 3;
+    z-index: 6;
     padding-top: 5px;
 }
 
@@ -358,7 +359,7 @@ footer {
     padding: 8rem 4rem 2rem;
     transform: translateX(120%);
     transition: transform 0.5s ease;
-    z-index: 1;
+    z-index: 5;
     background: linear-gradient(180deg, var(--drawer), var(--darkest) 100%);
 }
 
