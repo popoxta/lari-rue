@@ -33,12 +33,12 @@ body {
     color: white;
 }
 
-a {
+.fancy-link {
     color: var(--green);
     text-decoration: none;
 }
 
-a:after {
+.fancy-link:after {
     color: var(--green);
     content: "<";
     position: absolute;
@@ -47,11 +47,11 @@ a:after {
     transition: opacity ease-in-out 0.2s;
 }
 
-a:hover {
+.fancy-link:hover {
     color: white;
 }
 
-a:hover:after {
+.fancy-link:hover:after {
     opacity: 1;
 }
 
@@ -69,6 +69,7 @@ a:hover:after {
 
 .title {
     color: var(--green);
+    text-decoration: none;
     cursor: pointer;
     font-size: 2rem;
     font-weight: normal;
@@ -392,15 +393,15 @@ footer {
     text-align: center;
 }
 
-.nav-list a {
+.nav-list .fancy-link {
     color: white;
 }
 
-.nav-list a:after {
+.nav-list .fancy-link:after {
     color: white;
 }
 
-.nav-list a:hover {
+.nav-list .fancy-link:hover {
     color: var(--green);
 }
 
@@ -424,6 +425,7 @@ footer {
     .section-content {
         flex-direction: column;
         max-width: 80%;
+        padding-top: 25vh;
         gap: 3rem;
     }
 
