@@ -154,7 +154,7 @@ body {
 
 /* SECTIONS */
 
-.section-content {
+.descent {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -164,25 +164,25 @@ body {
     gap: 8rem;
 }
 
-.section-text {
+.descent-text {
     max-width: 35rem;
 }
 
-.section-content p, .section-content h2 {
+.descent p, .descent h2 {
     color: white;
     text-align: left;
 }
 
-.section-content p {
+.descent p {
     font-weight: 300;
 }
 
-.section-content h2 {
+.descent h2 {
     font-size: 2rem;
     font-weight: normal;
 }
 
-.section-content hr {
+.descent hr {
     width: 90%;
     background-color: var(--green);
     border: none;
@@ -190,7 +190,7 @@ body {
     margin: 0.5rem 0 1rem;
 }
 
-.section-links {
+.descent-links {
     max-width: 100%;
     flex-shrink: 0;
     text-align: center;
@@ -211,10 +211,9 @@ body {
 
 /* BLOG */
 
-.blog-content {
-    padding: 25vh 20% 0;
+.blog {
+    padding: 20vh 20% 15vh;
     margin: 0 auto;
-    position: relative;
 }
 
 .bottom-tenta {
@@ -237,33 +236,72 @@ body {
     font-weight: normal;
 }
 
-.blog-content hr {
+.blog-subheader {
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.blog-subheader:after {
+    width: 60%;
+    content: " ";
+    display: block;
+    border-bottom: 2px solid var(--lightest);
+    margin: 0.5rem 0 1rem;
+}
+
+.blog hr {
     width: 60%;
     background-color: var(--green);
     border: none;
     height: 2px;
-    margin: 0.5rem 0 1.5rem;
+    margin: 0.5rem 0 2rem;
 }
 
-.blog-text {
+.blog-content {
     columns: 2;
     column-gap: 5rem;
 }
 
-.blog-text > p {
-    color: white;
-    font-weight: 300;
+.blog-section {
+    page-break-inside: avoid;
+    margin-bottom: 2rem;
 }
 
-.blog-content > .home-link {
+.blog-section > p {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.blog-section > p:last-child {
+    margin-bottom: 0;
+}
+
+.blog > .home-link {
     margin-top: 3rem;
 }
 
-/* FOOTER */
-
-footer {
-    position: relative;
+.wide-paragraph {
+    column-span: all;
+    margin-bottom: 2rem;
 }
+
+.conclusion {
+    margin-top: 2rem;
+}
+
+.code {
+    color: var(--green);
+    background-color: var(--dark);
+    font-family: monospace;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/* FOOTER */
 
 .footer {
     color: var(--dark);
@@ -422,7 +460,7 @@ footer {
         padding-top: 15vh;
     }
 
-    .section-content {
+    .descent {
         flex-direction: column;
         max-width: 80%;
         padding-top: 25vh;
@@ -444,11 +482,11 @@ footer {
         margin-bottom: 0;
     }
 
-    .blog-text {
+    .blog-content {
         columns: 1;
     }
 
-    .blog-text > p {
+    .blog-content > p {
         margin-bottom: 3rem;
     }
 
