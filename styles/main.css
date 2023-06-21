@@ -160,7 +160,7 @@ body {
     text-align: center;
     max-width: 60%;
     margin: 0 auto;
-    padding-top: 30vh;
+    padding-top: 28vh;
     gap: 8rem;
 }
 
@@ -175,6 +175,10 @@ body {
 
 .descent p {
     font-weight: 300;
+}
+
+.descent p {
+    margin-top: 1rem
 }
 
 .descent h2 {
