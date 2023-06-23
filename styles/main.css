@@ -29,6 +29,13 @@ body {
     background: linear-gradient(180deg, #344f75, #334e73, #324b6f, #2f4769, #2d4261, #293c59, #263650, #233148, #202c41, #1d283b, #1c2637, #1b2536 45rem);
 }
 
+/* GENERIC */
+
+.full-page {
+    min-height: 100vh;
+    padding-top: 25vh;
+}
+
 .white {
     color: white;
 }
@@ -53,6 +60,11 @@ body {
 
 .fancy-link:hover:after {
     opacity: 1;
+}
+
+p {
+    font-weight: 300;
+    color: white;
 }
 
 /* HEADER */
@@ -109,10 +121,7 @@ body {
     max-width: 15rem;
     margin-bottom: 2rem;
     animation: float 1.8s ease-in-out alternate infinite;
-}
-
-.full-page {
-    min-height: 100vh;
+    z-index: -1;
 }
 
 .main-content {
@@ -122,7 +131,6 @@ body {
     text-align: center;
     max-width: 40%;
     margin: 0 auto;
-    padding-top: 25vh;
 }
 
 .main-content > h1 {
@@ -134,7 +142,6 @@ body {
 
 .main-content > p {
     color: white;
-    font-weight: 300;
 }
 
 .main-content > hr {
@@ -152,7 +159,7 @@ body {
     text-transform: uppercase;
 }
 
-/* SECTIONS */
+/* DESCENT */
 
 .descent {
     display: flex;
@@ -160,7 +167,7 @@ body {
     text-align: center;
     max-width: 60%;
     margin: 0 auto;
-    padding-top: 28vh;
+    padding-bottom: 25vh;
     gap: 8rem;
 }
 
@@ -171,10 +178,6 @@ body {
 .descent p, .descent h2 {
     color: white;
     text-align: left;
-}
-
-.descent p {
-    font-weight: 300;
 }
 
 .descent p {
@@ -216,8 +219,11 @@ body {
 /* BLOG */
 
 .blog {
-    padding: 20vh 20% 15vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
     margin: 0 auto;
+    padding-bottom: 25vh;
 }
 
 .bottom-tenta {
@@ -273,8 +279,6 @@ body {
 }
 
 .blog-section > p {
-    color: white;
-    font-weight: 300;
     margin-bottom: 1rem;
 }
 
@@ -315,7 +319,10 @@ body {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
+    z-index: -1;
 }
+
+/* HAMBURGER - used with thanks from https://unused-css.com/blog/css-only-hamburger-menu/ */
 
 /* Cover to disable interactions when hb menu is open */
 .cover {
@@ -330,8 +337,6 @@ body {
     transition: opacity 0.5s ease-in-out;
     z-index: 3;
 }
-
-/* HAMBURGER - used with thanks from https://unused-css.com/blog/css-only-hamburger-menu/ */
 
 .hamburger-container {
     width: 30rem;
@@ -474,10 +479,6 @@ body {
         transform: none;
     }
 
-    .title:hover > .title-span {
-        transform: none;
-    }
-
     .header-circle {
         display: none;
     }
@@ -487,25 +488,21 @@ body {
         right: 1.5rem;
     }
 
-
     .drawer {
         min-width: 100%;
     }
 
-    .main-content {
-        max-width: 80%;
-        padding-top: 15vh;
+    .full-page {
+        padding-top: 18vh;
     }
 
     .descent {
         flex-direction: column;
-        max-width: 80%;
-        padding-top: 25vh;
         gap: 3rem;
     }
 
-    .full-page {
-        padding-bottom: 25vh;
+    .descent, .blog, .main-content {
+        max-width: 80%;
     }
 
     .links {
