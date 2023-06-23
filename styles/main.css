@@ -223,6 +223,7 @@ p {
     flex-direction: column;
     max-width: 60%;
     margin: 0 auto;
+    padding-top: 18vh;
     padding-bottom: 25vh;
 }
 
