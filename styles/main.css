@@ -455,6 +455,39 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+
+    header {
+        background-color: var(--dark);
+        height: 5rem;
+        width: 100%;
+        position: fixed;
+    }
+
+    .title {
+        top: 1rem;
+        left: 1rem;
+        margin-left: 0;
+    }
+
+    .title-span {
+        opacity: 1;
+        transform: none;
+    }
+
+    .title:hover > .title-span {
+        transform: none;
+    }
+
+    .header-circle {
+        display: none;
+    }
+
+    .hamburger, .hamburger-container .checkbox {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+
     .drawer {
         min-width: 100%;
     }
@@ -472,7 +505,7 @@ body {
     }
 
     .full-page {
-        padding-bottom: 15vh;
+        padding-bottom: 25vh;
     }
 
     .links {
@@ -495,8 +528,8 @@ body {
     }
 
     .bottom-tenta {
-        height: 25rem;
-        width: 25rem;
+        height: 20rem;
+        width: 20rem;
     }
 
 }
