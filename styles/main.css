@@ -261,6 +261,12 @@ p {
     margin: 0.5rem 0 1rem;
 }
 
+.blog-mini-header {
+    color: var(--green);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 .blog hr {
     width: 60%;
     background-color: var(--green);
