@@ -39,7 +39,150 @@
     <h1 class="blog-title">JavaScript & The DOM</h1>
     <hr>
     <article class="blog-content">
+        <div class="blog-section wide-paragraph">
+            <p>
+                Deep within the uncharted depths, an ancient dweller awaits; Javascript. Born from mysterious
+                machinations
+                in 1995, its presence has grown to monumental proportions. Traveler, heed this warning, for this
+                formidable
+                dweller is a force to be reckoned, a master of extraordinary marvels and treacherous pitfalls.
+                It's power knows no bounds - not even the web itself.
+            </p>
+        </div>
+        <div class="blog-section">
+            <h2 class="blog-subheader">How does JavaScript relate to HTML & CSS?</h2>
 
+            <p>
+                The relationship between JavaScript, CSS and HTML is something which may be compared to a video game! In
+                this analogy, HTML serves as the backbone, representing 3D models and graphics within the world, however
+                it lacks visual polish and nice textures.
+            </p>
+            <p>
+                CSS is the artist, providing the textures and bringing life to models, scenery and effects. It adds the
+                detailed visual elements, transforming the bland 3d models and breathing visual life into the
+                environment
+            </p>
+            <p>
+                However it is JavaScript which truly makes the experience - it acts as the core functionality and
+                gameplay itself, shaping how non-playable characters (NPCs) interact with the player, the mechanics of
+                the gameplay and enabling other actions which the player can make, making the game, well, a game.
+            </p>
+            <p>
+                Together they work well in creating a fully fledged experience, where HTML creates the foundation, CSS
+                provides the visuals and JavaScript adds the functionality.
+            </p>
+
+        </div>
+
+        <div class="blog-section">
+            <h2 class="blog-subheader">What is the DOM?</h2>
+            <p>
+                The DOM, or the Document Object Model, is a tree-like structure that represents the content of an HTML
+                document - a web page. When a page is loaded within the browser, this structure is created and stored
+                within memory.
+            </p>
+            <p>
+                The DOM may be thought of similarly to a family tree, where the document object acts as the root, or
+                founding ancestor of said tree. Each branch of the tree represents a different part of the webpage, such
+                as landmarks, headings, images or buttons. These are all considered Nodes, and they may have their own
+                branches and nodes as well.
+            </p>
+            <p>
+                The DOM is dynamic, meaning that it may be changed with the use of JavaScript! When JavaScript is used
+                to modify the DOM, any changes it makes are reflected on the screen. For example, it can be used to add
+                new elements (nodes), remove existing ones, or change their content.
+                It is however important to keep in mind that any changes made to the DOM with JavaScript do not affect
+                the original document/file itself!
+            </p>
+        </div>
+
+        <div class="blog-section">
+            <h2 class="blog-subheader">What are Functions?</h2>
+            <p>
+                Functions are like recipes for code! They allow for the creation of reusable instructions to perform a
+                specific task, like baking bread.
+            </p>
+            <p>
+                Now let’s say you’re a baker, and you’ve decided to add a sunflower-seed loaf to your shop. However,
+                every time you make this loaf, it turns out slightly different, and your customers <em>notice</em>.
+            </p>
+            <p>
+                To solve this, you decide to write a recipe, aka a function.
+                By writing down a recipe, you ensure that every time you make your sunflower-seed loaf, you follow the
+                same procedures, ensuring that each loaf turns out the same way.
+            </p>
+            <p>
+                The great thing about this recipe is that if you ever want to make changes to your loaf, you only need
+                to update the recipe, and you don’t need to modify the process for every single loaf. Once the recipe is
+                updated, every time you bake your sunflower-seed loaf, the changes are automatically implemented.
+            </p>
+        </div>
+
+        <div class="blog-section">
+            <h2 class="blog-subheader">Explain Control Flow and Loops</h2>
+            <p>
+                Control flow and loops are the bread and butter of programming, almost literally. In fact, I will even
+                make analogies for each of these based on the prior sentence alone.
+            </p>
+            <h3 class="blog-mini-header">
+                Control Flow
+            </h3>
+            <p>
+                Control flow is quite comparable to when you open your pantry, and you make a decision based on specific
+                conditions. In our example, you’re looking for bread, so you check to see if you have bread in the
+                pantry. If there is bread, you take it out, so you may eat it. If there isn’t bread, well, you may have
+                to go to the grocery store.
+                This conditional ‘logic’ is control flow.
+            </p>
+            <h3 class="blog-mini-header">
+                Loops
+            </h3>
+            <p>
+                Now, let’s imagine that you did have bread, so you grab some butter as well and sit down to eat your
+                bread. Since you’ve got a funky eating habit, you decide to cut up the pieces of bread into tiny bites.
+                Then, every time you take a piece, you butter it, eat it, and reach for the next - until they’re all
+                gone.
+                Here, you’ve introduced a loop - repeating a specific set of actions until a certain condition is met -
+                in this case, until you’ve eaten all the bread!
+            </p>
+        </div>
+
+        <div class="blog-section">
+            <h2 class="blog-subheader">What is the difference when accessing data from Arrays and Objects?</h2>
+            <p>
+                Arrays and Objects are both data structures which are used to store information, however the way in
+                which information is accessed is slightly different. In essence, they may both be likened to the
+                structure of hotel rooms. Consider the following;
+            </p>
+
+            <h3 class="blog-mini-header">
+                Arrays
+            </h3>
+            <p>
+                Think of an array as a row of hotel rooms, where each room is ordered from left to right, starting from
+                0. So, the first room is room 0, the second room is room 1, the third is room 2, and so on. To access
+                the information stored within a specific room, you simply need to know the room number, which is the
+                index.
+            </p>
+            <p>
+                For example, if you wanted to know what was within room 3, you can access that room by using its index -
+                e.g. <span class="code">rooms[3]</span>
+            </p>
+            <h3 class="blog-mini-header">
+                Objects
+            </h3>
+            <p>
+                Now, imagine you are in a different hotel, and fortunately for you, your second hotel cares a little bit
+                more about privacy. In this hotel, you can’t access a room just by knowing the room number, instead, you
+                need to know the room’s unique name, like ‘jazzy-spa-room’.
+            </p>
+            <p>
+                Every room has a special name, which acts as the key. Once you know the name (key) of the room, you may
+                access the room, aka the values, via either dot notation e.g.
+                <span class="code">rooms.jazzy-spa-room</span> or bracket notation
+                e.g. <span class="code">rooms[jazzy-spa-room]</span>
+            </p>
+        </div>
 
     </article>
 
