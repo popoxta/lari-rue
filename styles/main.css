@@ -28,7 +28,7 @@ body {
     position: relative;
     /* More manual, painful gradient to try and combat banding */
     background: linear-gradient(180deg, #344f75, #334e73, #324b6f, #2f4769, #2d4261, #293c59, #263650, #233148, #202c41, #1d283b, #1c2637, #1b2536 45rem);
-    padding-bottom: 22rem;
+    padding-bottom: min(20rem, 25vh);
 }
 
 /* HEADERS */
@@ -118,7 +118,7 @@ hr {
 
 .center {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 /* LOGO */
@@ -163,14 +163,18 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15rem 0 0;
+    padding: min(15rem, calc(15vh + 4rem)) 0 0;
     margin: 0 auto;
 }
 
 #home {
     max-width: var(--smaller-width);
     text-align: center;
-    padding-bottom: 22rem;
+    padding-bottom: min(15rem, calc(20vh + 4rem));
+}
+
+#home h3 {
+    font-size: 1.2rem;
 }
 
 section, article {
@@ -183,6 +187,7 @@ section, article {
 #descent {
     display: flex;
     gap: 5rem;
+    padding-bottom: 10vh;
 }
 
 #descent > ul {
@@ -191,7 +196,6 @@ section, article {
     flex-shrink: 0;
     gap: 2rem;
     list-style: none;
-
 }
 
 #descent hr, article hr {
@@ -199,6 +203,11 @@ section, article {
 }
 
 /* ARTICLE */
+
+.blog {
+    padding-top: 10rem;
+}
+
 article > img {
     width: 100%;
     border-radius: 15px;
@@ -212,7 +221,6 @@ article {
     column-gap: 5rem;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 10%);
-    margin-top: 10rem;
     max-width: var(--larger-width);
     padding: 3rem 3rem 2rem;
 }
@@ -446,14 +454,17 @@ article hr {
     #descent {
         flex-direction: column;
         text-align: center;
+        padding-bottom: 0;
     }
 
     .bottom-tenta {
+        left: -6rem;
         height: 20rem;
         width: 20rem;
     }
 
-    ul {
+    #descent > ul {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
