@@ -9,37 +9,47 @@
     <link rel="stylesheet" href="../styles/main.css" type="text/css">
 </head>
 <body>
+<nav class="hamburger-container">
+    <div class="hamburger">
+        <span class="slice"></span>
+        <span class="slice"></span>
+        <span class="slice"></span>
+    </div>
+
+    <div class="drawer">
+        <h3>Where art thou headed?</h3>
+        <ul class="nav-list">
+            <li class="nav-list-item"><a class="fancy-link" href="../index.html">Home</a></li>
+            <li class="nav-list-item"><a class="fancy-link" href="#">About</a></li>
+            <li class="nav-list-item"><a class="fancy-link" href="../index.html#descent">Blog posts</a></li>
+        </ul>
+    </div>
+    <div class="cover"></div>
+</nav>
+
 <header>
-    <nav class="hamburger-container">
-        <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation"/>
-        <label class="hamburger" for="hamburger-toggle">
-            <span class="slice"></span>
-            <span class="slice"></span>
-            <span class="slice"></span>
-        </label>
-
-        <div class="drawer">
-            <h3>Where art thou headed?</h3>
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="../index.html" class="fancy-link">Home</a></li>
-                <li class="nav-list-item"><a href="#" class="fancy-link">About</a></li>
-                <li class="nav-list-item"><a href="../index.html#descent" class="fancy-link">Blog Posts</a></li>
-            </ul>
-        </div>
-        <div class="cover"></div>
-    </nav>
-
-    <p><a href="../index.html" class="title">P<span class="title-span">OP<span class="white">OXTA</span></span></a></p>
+    <h1><a href="../index.html" class="title">P<span class="title-span">OP<span class="white">OXTA</span></span></a>
+    </h1>
     <div class="header-circle"></div>
-
 </header>
 
-<main class="blog full-page">
-    <h1 class="blog-title">Identity & Values</h1>
-    <hr>
-    <article class="blog-content">
-        <div class="blog-section ">
-            <h2 class="blog-subheader">Explain an ethical decision you have made</h2>
+<main class="blog">
+    <article id="article">
+        <div class="header-img wide center">
+            <img src="../resources/vince-fleming-Vmr8bGURExo-unsplash.jpg" alt="Human reflecting on themself">
+            <p class="img-credit">
+                Photo by <a
+                    href="https://unsplash.com/pt-br/@vincefleming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vince
+                Fleming</a> on <a
+                    href="https://unsplash.com/photos/Vmr8bGURExo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+        <div class="wide center">
+            <h1>Identity & Values</h1>
+            <hr>
+        </div>
+        <div>
+            <h2>Explain an ethical decision you have made</h2>
             <p>I believe ethical decisions encompass a wide range of choices that we all make every day, from individual
                 environmental responsibility to more critical matters such as healthcare confidentiality and
                 privacy.
@@ -65,8 +75,8 @@
                 expressed gratitude for my open communication and handling of the situation.
             </p>
         </div>
-        <div class="blog-section ">
-            <h2 class="blog-subheader">How have your culture and the people around you influenced your values and
+        <div>
+            <h2>How have your culture and the people around you influenced your values and
                 identity?</h2>
             <p>
                 As a German, be it from culture or otherwise, my family and I are naturally quite pragmatic - it’s even
@@ -86,8 +96,8 @@
             </p>
         </div>
 
-        <div class="blog-section ">
-            <h2 class="blog-subheader">What are your strengths and how will they support you during your learning
+        <div>
+            <h2>What are your strengths and how will they support you during your learning
                 journey?</h2>
             <p>
                 I've faced significant hardships, but my determination and resilience have kept me going, and I think
@@ -106,8 +116,8 @@
             </p>
         </div>
 
-        <div class="blog-section ">
-            <h2 class="blog-subheader">What are your limitations in terms of learning and career?</h2>
+        <div>
+            <h2>What are your limitations in terms of learning and career?</h2>
             <p>
                 One challenge I face is self-doubt, particularly when it comes to measuring my own worth and skills. I
                 find comfort in concrete values like statistics and facts, which makes self-assessment difficult.
@@ -122,8 +132,8 @@
             </p>
         </div>
 
-        <div class="blog-section ">
-            <h2 class="blog-subheader">Share an example of when you were trying to work productively with others, but
+        <div>
+            <h2>Share an example of when you were trying to work productively with others, but
                 there was resistance or tension</h2>
             <p>
                 In a mentoring role, I noticed that some staff members were hesitant and fearful about learning a new
@@ -142,16 +152,19 @@
                 in teaching, and that offering personalised guidance truly empowers others to embrace their challenges.
             </p>
         </div>
+
+        <h4 class="wide center"><a href="../index.html" class="fancy-link">Return home</a></h4>
+
     </article>
 
-    <p class="home-link"><a href="../index.html" class="fancy-link">Return home</a></p>
-    <div class="bottom-tenta"></div>
-
 </main>
+
+<div class="bottom-tenta"></div>
 
 <footer>
     <p class="footer">POPOXTA</p>
 </footer>
+
 
 </body>
 </html>
