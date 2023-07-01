@@ -116,11 +116,13 @@ a {
 
 .wide {
     column-span: all;
+    margin-bottom: 1.5rem;
 }
 
 .wide > p {
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .center {
@@ -241,6 +243,7 @@ section, article {
 
 article {
     columns: 2;
+    column-gap: 4rem;
     border-radius: 15px;
     max-width: var(--larger-width);
     background-color: rgba(52, 79, 117, 5%);
@@ -251,22 +254,13 @@ article h1 {
     text-align: center;
 }
 
-article > div:not(article > div:first-of-type, article > div:nth-of-type(2)) {
-    margin-bottom: 3rem;
+article > div {
     page-break-inside: avoid;
 }
 
-article h2, article h2, article h3 {
+article h2, article h2, article h3, article p {
     margin-bottom: 1.5rem;
     text-transform: initial;
-}
-
-article p {
-    margin-bottom: 1.5rem;
-}
-
-article p:last-of-type {
-    margin-bottom: 0;
 }
 
 article hr {
