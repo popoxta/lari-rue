@@ -9,38 +9,47 @@
     <link rel="stylesheet" href="../styles/main.css" type="text/css">
 </head>
 <body>
+<nav class="hamburger-container">
+    <div class="hamburger">
+        <span class="slice"></span>
+        <span class="slice"></span>
+        <span class="slice"></span>
+    </div>
+
+    <div class="drawer">
+        <h3>Where art thou headed?</h3>
+        <ul class="nav-list">
+            <li class="nav-list-item"><a class="fancy-link" href="../index.html">Home</a></li>
+            <li class="nav-list-item"><a class="fancy-link" href="#">About</a></li>
+            <li class="nav-list-item"><a class="fancy-link" href="../index.html#descent">Blog posts</a></li>
+        </ul>
+    </div>
+    <div class="cover"></div>
+</nav>
+
 <header>
-    <nav class="hamburger-container">
-        <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation"/>
-        <label class="hamburger" for="hamburger-toggle">
-            <span class="slice"></span>
-            <span class="slice"></span>
-            <span class="slice"></span>
-        </label>
-
-        <div class="drawer">
-            <h3>Where art thou headed?</h3>
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="../index.html" class="fancy-link">Home</a></li>
-                <li class="nav-list-item"><a href="#" class="fancy-link">About</a></li>
-                <li class="nav-list-item"><a href="../index.html#descent" class="fancy-link">Blog Posts</a></li>
-            </ul>
-        </div>
-        <div class="cover"></div>
-    </nav>
-
-    <p><a href="../index.html" class="title">P<span class="title-span">OP<span class="white">OXTA</span></span></a></p>
+    <h1><a href="../index.html" class="title">P<span class="title-span">OP<span class="white">OXTA</span></span></a>
+    </h1>
     <div class="header-circle"></div>
-
 </header>
 
-<main class="blog full-page">
-    <h1 class="blog-title">Learning Plan</h1>
-    <hr>
-    <article class="blog-content">
-
-        <div class="blog-section">
-            <h2 class="blog-subheader">What is your long-term goal or career pathway?</h2>
+<main class="blog">
+    <article id="article">
+        <div class="header-img wide center">
+            <img src="../resources/trent-erwin-UgA3Xvi3SkA-unsplash.jpg" alt="The desk with learning tools">
+            <p class="img-credit">
+                Photo by <a
+                    href="https://unsplash.com/@tjerwin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Trent
+                Erwin</a> on <a
+                    href="https://unsplash.com/photos/UgA3Xvi3SkA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+        <div class="wide center">
+            <h1 class="blog-title">Learning Plan</h1>
+            <hr>
+        </div>
+        <div>
+            <h2>What is your long-term goal or career pathway?</h2>
 
             <p>
                 My long-term goal is to become a versatile software developer. My goals are to continuously learn about
@@ -54,8 +63,8 @@
             </p>
         </div>
 
-        <div class="blog-section">
-            <h2 class="blog-subheader">What are your strengths and limitations in learning?</h2>
+        <div>
+            <h2>What are your strengths and limitations in learning?</h2>
 
             <p>
                 I possess a strength in recognizing connections between prior knowledge, enabling me to quickly acquire
@@ -75,8 +84,8 @@
             </p>
         </div>
 
-        <div class="blog-section">
-            <h2 class="blog-subheader">What non-technical skills would you like to see developed?</h2>
+        <div>
+            <h2>What non-technical skills would you like to see developed?</h2>
 
             <p>
                 During my time at DevAcademy, I am wanting to actively focus on developing as many non-technical skills
@@ -94,8 +103,8 @@
             </p>
         </div>
 
-        <div class="blog-section">
-            <h2 class="blog-subheader">What is your commitment to managing your workload?</h2>
+        <div>
+            <h2>What is your commitment to managing your workload?</h2>
 
             <p>
                 To manage my workload effectively, I am committed to using the Pomodoro technique, which involves
@@ -113,8 +122,8 @@
             </p>
         </div>
 
-        <div class="blog-section">
-            <h2 class="blog-subheader">What do you expect from the facilitation team?</h2>
+        <div>
+            <h2>What do you expect from the facilitation team?</h2>
 
             <p>
                 My primary expectation from the facilitation team is to consistently deliver quality feedback on
@@ -128,8 +137,8 @@
             </p>
         </div>
 
-        <div class="blog-section">
-            <h2 class="blog-subheader">Do you have any block-out times which must be planned for?</h2>
+        <div>
+            <h2>Do you have any block-out times which must be planned for?</h2>
 
             <p>
                 As I am currently away from family, I have planned dates for their visits, and during these periods I
@@ -141,13 +150,13 @@
             </p>
         </div>
 
-    </article>
+        <h4 class="wide center"><a href="../index.html" class="fancy-link">Return home</a></h4>
 
-    <p class="home-link"><a href="../index.html" class="fancy-link">Return home</a></p>
-    <div class="bottom-tenta"></div>
+    </article>
 
 </main>
 
+<div class="bottom-tenta"></div>
 
 <footer>
     <p class="footer">POPOXTA</p>
