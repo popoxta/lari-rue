@@ -130,6 +130,10 @@ a {
     margin: 0 auto;
 }
 
+.img-bottom {
+    object-position: 100% 80%;
+}
+
 /* LOGO */
 
 .header-circle {
