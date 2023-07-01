@@ -7,7 +7,7 @@
     --green: #B8FFC3;
     --smaller-width: min(90%, 50rem);
     --mid-width: min(90%, 65rem);
-    --larger-width: min(90%, 80rem);
+    --larger-width: min(90%, 75rem);
 
     font-family: 'Poppins', sans-serif;
 }
@@ -74,6 +74,10 @@ hr {
     margin: 1.5rem auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* UTILITY */
 
 .white {
@@ -82,7 +86,6 @@ hr {
 
 .fancy-link {
     color: var(--green);
-    text-decoration: none;
 }
 
 .fancy-link:after {
@@ -113,12 +116,16 @@ hr {
 
 .wide {
     column-span: all;
-    margin-bottom: 2rem;
+}
+
+.wide > p {
+    width: 80%;
+    margin: auto;
 }
 
 .center {
     text-align: center;
-    margin-top: 3rem;
+    margin: 0 auto;
 }
 
 /* LOGO */
@@ -135,7 +142,6 @@ hr {
 
 .title {
     color: inherit;
-    text-decoration: none;
     margin-left: 1.3rem;
     cursor: pointer;
 
@@ -159,7 +165,7 @@ hr {
 
 /* CONTENT */
 
-#home, section, article {
+#home, section, .blog {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,27 +211,47 @@ section, article {
 /* ARTICLE */
 
 .blog {
-    padding-top: 10rem;
+    padding-top: 6rem;
 }
 
-article > img {
-    width: 100%;
-    border-radius: 15px;
+.header-img {
+    min-width: var(--mid-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1.5rem;
+}
+
+.header-img > img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 5px;
     opacity: 90%;
 }
 
-article {
-    display: flow;
-    columns: 2;
-    column-gap: 5rem;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 10%);
-    max-width: var(--larger-width);
-    padding: 3rem 3rem 2rem;
+.img-credit {
+    color: var(--dark);
 }
 
-article > div {
+.img-credit > a {
+    color: inherit;
+}
+
+article {
+    columns: 2;
+    border-radius: 15px;
+    max-width: var(--larger-width);
+    background-color: rgba(52, 79, 117, 5%);
+    padding: 3rem;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article > div:not(article > div:first-of-type, article > div:nth-of-type(2)) {
     margin-bottom: 3rem;
     page-break-inside: avoid;
 }
@@ -244,7 +270,12 @@ article p:last-of-type {
 }
 
 article hr {
-    width: 100%;
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+h4.wide.center {
+    margin-top: 3rem;
 }
 
 /* FOOTER */
@@ -417,6 +448,12 @@ article hr {
 }
 
 @media screen and (max-width: 750px) {
+
+    .wide > p {
+        width: 100%;
+        text-align: left;
+    }
+
 
     header {
         background-color: var(--dark);
