@@ -11,36 +11,34 @@
 </head>
 <body>
 
+<nav class="hamburger-container">
+    <div class="hamburger">
+        <span class="slice"></span>
+        <span class="slice"></span>
+        <span class="slice"></span>
+    </div>
+
+    <div class="drawer">
+        <h3>Where art thou headed?</h3>
+        <ul class="nav-list">
+            <li class="nav-list-item"><a class="fancy-link" href="#home">Home</a></li>
+            <li class="nav-list-item"><a class="fancy-link" href="#">About</a></li>
+            <li class="nav-list-item"><a class="fancy-link" href="#descent">Blog posts</a></li>
+        </ul>
+    </div>
+    <div class="cover"></div>
+</nav>
+
 <header>
-    <nav class="hamburger-container">
-        <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation"/>
-        <label class="hamburger" for="hamburger-toggle">
-            <span class="slice"></span>
-            <span class="slice"></span>
-            <span class="slice"></span>
-        </label>
-
-        <div class="drawer">
-            <h3>Where art thou headed?</h3>
-            <ul class="nav-list">
-                <li class="nav-list-item"><a class="fancy-link" href="#home">Home</a></li>
-                <li class="nav-list-item"><a class="fancy-link" href="#">About</a></li>
-                <li class="nav-list-item"><a class="fancy-link" href="#descent">Blog posts</a></li>
-            </ul>
-        </div>
-        <div class="cover"></div>
-    </nav>
-
-    <p><a href="#home" class="title">P<span class="title-span">OP<span class="white">OXTA</span></span></a></p>
+    <h1><a href="#home" class="title">P<span class="title-span">OP<span class="white">OXTA</span></span></a></h1>
     <div class="header-circle"></div>
-
 </header>
 
-<main class="full-page">
-    <div id="home" class="main-content">
+<main id="home">
+    <div>
         <!-- Octopus licensed for personal use https://clipart-library.com/clipart/519295.htm -->
         <img class="octopus" src="./resources/octopus.png" alt="A sketchy octopus">
-        <h1>Greetings, traveler</h1>
+        <h2>Greetings, traveler</h2>
         <p>
             You must be weary. Fear not, as you may yet find solace within the cradling embrace of the deep, where the
             tides gently carry
@@ -51,11 +49,11 @@
     </div>
 </main>
 
-<section class="full-page">
+<section>
 
-    <div class="descent">
-        <div class="descent-text">
-            <h2 id="descent">The deep beckons...</h2>
+    <div id="descent">
+        <div>
+            <h2>The deep beckons...</h2>
             <hr>
             <p>You descend, swallowed by the currents, cradled within the deep's embrace.</p>
             <p>
@@ -68,21 +66,19 @@
             </p>
         </div>
 
-        <div class="descent-links">
-            <ul class="links">
-                <li><a href="./blog/te-houtaewa.html" class="fancy-link">Te-Houtaewa</a></li>
-                <li><a href="./blog/html-css.html" class="fancy-link">CSS Positioning</a></li>
-                <li><a href="./blog/javascript-dom.html" class="fancy-link">JavaScript & The DOM</a></li>
-                <li><a href="./blog/identity-values.html" class="fancy-link">Identity & Values</a></li>
-                <li><a href="./blog/learning-plan.html" class="fancy-link">Learning Plan</a></li>
-                <li><a href="./blog/emotional-intelligence.html" class="fancy-link">Emotional Intelligence</a></li>
-            </ul>
-        </div>
+        <ul class="links">
+            <li><a href="./blog/te-houtaewa.html" class="fancy-link">Te-Houtaewa</a></li>
+            <li><a href="./blog/html-css.html" class="fancy-link">CSS Positioning</a></li>
+            <li><a href="./blog/javascript-dom.html" class="fancy-link">JavaScript & The DOM</a></li>
+            <li><a href="./blog/identity-values.html" class="fancy-link">Identity & Values</a></li>
+            <li><a href="./blog/learning-plan.html" class="fancy-link">Learning Plan</a></li>
+            <li><a href="./blog/emotional-intelligence.html" class="fancy-link">Emotional Intelligence</a></li>
+        </ul>
+
     </div>
 
-    <div class="bottom-tenta"></div>
 </section>
-
+<div class="bottom-tenta"></div>
 <footer>
     <p class="footer">POPOXTA</p>
 </footer>
