@@ -306,7 +306,8 @@ h4.wide.center {
 }
 
 .hamburger-container {
-    width: 30rem;
+    width: 3rem;
+    height: 2.5rem;
     position: absolute;
     top: 2.3rem;
     right: 2rem;
@@ -314,27 +315,27 @@ h4.wide.center {
 }
 
 .hamburger-container .drawer a {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
-.hamburger-container .checkbox:checked ~ .drawer a {
-    opacity: 1;
+.hamburger-container.show-menu .cover {
+    opacity: 50%;
 }
 
-.hamburger-container .checkbox:checked ~ .drawer, .checkbox:checked ~ .cover {
+.hamburger-container.show-menu .drawer, .hamburger-container.show-menu .cover {
     transform: translateX(0%);
 }
 
-.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
+.hamburger-container.show-menu .hamburger .slice:nth-child(1) {
     transform: translateY(12px) rotate(45deg);
 }
 
-.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(2) {
+.hamburger-container.show-menu .hamburger .slice:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(3) {
+.hamburger-container.show-menu .hamburger .slice:nth-child(3) {
     transform: translateY(-0.6rem) rotate(-45deg);
 }
 
@@ -347,6 +348,7 @@ h4.wide.center {
     transition: transform 0.5s ease;
     z-index: 6;
     padding-top: 5px;
+    cursor: pointer;
 }
 
 .hamburger .slice {
@@ -452,7 +454,6 @@ h4.wide.center {
         text-align: left;
     }
 
-
     header {
         background-color: var(--dark);
         height: 5rem;
@@ -510,6 +511,10 @@ h4.wide.center {
         columns: 1;
         padding: 3rem 2rem;
         max-width: 100%;
+    }
+
+    .drawer {
+        padding: 8rem 2rem 2rem;
     }
 
 }
