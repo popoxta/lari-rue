@@ -134,6 +134,11 @@ a {
     object-position: 100% 80%;
 }
 
+.extra-bottom {
+    margin-bottom: 1.5rem
+}
+
+
 /* LOGO */
 
 .header-circle {
