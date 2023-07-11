@@ -203,6 +203,7 @@ section, article {
 
 #descent {
     display: flex;
+    align-items: center;
     gap: 5rem;
     padding-bottom: 10vh;
 }
@@ -213,6 +214,8 @@ section, article {
     flex-shrink: 0;
     gap: 2rem;
     list-style: none;
+    flex-wrap: wrap;
+    max-height: 25rem;
 }
 
 #descent hr, article hr {
